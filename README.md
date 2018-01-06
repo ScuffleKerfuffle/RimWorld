@@ -32,7 +32,7 @@ If you said yes to any of these things you are a dirty, dirty cheater. But then 
 * I have not tested compatibility with any other mods whatsoever. Caveat Emptor!
 * All ranged weapons and turrets have a base accuracy of 100% at all ranges.
 
-## Included in This Mod
+## Included in this Mod
 
 ### Farming
 
