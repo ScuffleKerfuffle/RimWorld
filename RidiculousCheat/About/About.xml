@@ -1,0 +1,92 @@
+<?xml vesion="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Scuffle's Stuff: A Game-Breaking Cheat Mod</name>
+	<author>Scuffle Kerfuffle</author>
+	<targetVersion>0.18.0</targetVersion>
+	<description>
+
+    [h1]Current Version is 0.0.1 Alpha[/h1]
+
+    Are you tired of mining massive amounts of gold for beautiful beds? Want your Pawns to be happy but for your colony to still show as super poor so those pesky raiders won't care about you? Do you want turrets that never miss (except due to cover. Can't fix that)? How about walls and embrasures that are stronger than the smell of rotten eggs?
+
+	  If you said yes to any of these things you are a dirty, dirty cheater. But then again: so am I! This mod adds a slew of things I wanted to see. None of them are balanced. They are, in fact, very likely to ruin the game for you if you use them. These things are just stupidly overpowered. You have been warned.
+
+    [h1]Notes[/h1]
+
+    [list]
+    [*]I am not an artist. I'm awful at making things look pretty. That being the case, everything below uses some vanilla visual or other. If you'd like to make something prettier, please feel free to do so and send it over. I'll happily include it and give you an artist's credit.
+    [*]All items have a base market value of 0.05, a "stuff" cost of 1, and a work cost of 1.
+    [*]Base-Related items (walls, furniture, floors, etc.) have a beauty value of 5000 in addition to their other stats. Differences are marked with an [u]underline[/u].
+    [*]Apparel items provide perfect insulation and cooling. They are designed to completely offset the worst temperatures.
+    [*]Plants intended for Pawns can be grown via hydroponics.
+    [*]All plants have an ideal temperature range of -50f to 140f.
+    [*]This mod is licensed under the MIT License (3.0). All code is publicly available on my [url=https://github.com/ScuffleKerfuffle/RimWorld]GitHub repository[/url]
+    [*]As of 06JAN18 all mods sampled for this mod had text in their descriptions allowing for unrestricted use.
+    [*]I have not tested compatibility with any other mods whatsoever. Caveat Emptor!
+    [/list]
+
+    [h1][b]Included in this Mod[/b][/h1]
+
+    [h1]Farming[/h1]
+
+    [list]
+    [*]HyperHay (I'm lazy with naming) - A hay that cannot be harvested, but that provides 2 nutrition when eaten by animals that eat plants. Grows in a half day.
+    [*]NutriShroom - A mushroom that is a meat substitute and provides 2 nutrition. Grows in a half day. Great for use with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=729690064]Feed the Colonists[/url] made by [url=https://steamcommunity.com/id/Gutsnipe]BOT rob[/url].
+    [*]NutriBerry - A berry that provides 2 nutrition. Grows in a half day.
+    [/list]
+
+    [h1]Furniture[/h1]
+
+    [list]
+    [*]Comfort Chair 5000 - An armchair with base comfort of 2.0.
+    [*]Comfort Bed 5000 - A bed with base comfort of 2.0.
+    [*]ImpressoMatic Dining Table - A modular dining table with [u]beauty 10000[/u] .
+    [*]Comfort Dining Chair 5000 - A dining chair with base comfort of 2.0.
+    [/list]
+
+    [h1]Security[/h1]
+
+    [list]
+    [*]Hyper Turret - A 1x1 turret that fires with 100% accuracy at all ranges, has an extended range, and fires in two modes. In non-lethal mode, it does massive consciousness damage. In lethal mode, it deals massive damage (same damage type as a charged rifle). In either mode, it deals massive EMP damage.
+    [/list]
+
+    [h1]Structure[/h1]
+
+    [list]
+    [*]ImpregnaWall - A wall with 150,000 hit points. If your pawns die behind these walls, it's because death came from within.
+    [*]ImpregnaWall Embrasure Edition - An embrasure with, you guessed it, 150,000 hit points.
+    [*]ImpregnaDoor - A door with 150,000 hit points.
+    [*]Auto ImpregnaDoor - An auto-door with 150,000 hit points.
+    [/list]
+
+    [h1]Climate Control[/h1]
+
+    [list]
+    [*]TempurMatic 5000 - A 1x1 climate control device that can set temperatures from -50f to 120f. Consumes no power, has no exhaust, and is powerful enough to control a 20x20 room (I think).
+    [/list]
+
+    [b]Note that I hope to eventually make the cooler wall-mounted like the vents from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=973091113]Climate Control[/url] by [url=https://steamcommunity.com/id/vasumahesh]ColdToad[/url]. We'll see if that ever happens.[/b]
+
+    [h1]Power[/h1]
+
+    [list]
+    [*]GenaTron 5000 - A 1x1 power source that generates 500,000 power.
+    [/list]
+
+    [h1]Weapons[/h1] [b]Note: All ranged weapons have a base accuracy of 100% at all ranges.
+
+    [list]
+    [*]Shock Rifle - A rifle based on the charged rifle that deals heavy consciousness damage.
+    [*]Phase Rifle - A rifle based on the charged rifle that deals heavy damage.
+    [*]Skull Crusher - A mace that deals heavy blunt damage. Lives up to its name.
+    [/list]
+
+
+    [h1]Possible Future Functionality[/h1]
+    [list]
+    [*]I'm investigating the possibility of making the bed a mending bed similar to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1242508171]Mending Beds[/url] made by [url=https://steamcommunity.com/profiles/76561198036333870]Ogre[/url]), but with the ridiculous values of the other furniture.
+    [/list]
+
+    Thanks for checking out my mod! This is my first RimWorld mod so there's a pretty good chance that something doesn't work right. Please leave me a comment detailing any bugs encountered!
+  </description>
+</ModMetaData>
