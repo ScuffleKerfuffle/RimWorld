@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8382CA39-19E4-441A-BC88-186FCFA24A93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RidiculousCheat</RootNamespace>
+    <AssemblyName>RidiculousCheat</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>E:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About\About.xml" />
+    <Content Include="About\preview.png" />
+    <Content Include="Defs\Hediffs\Hediff_KnockedOut.xml" />
+    <Content Include="Defs\ThingDefs_Apparel\HyperArmor.xml" />
+    <Content Include="Defs\ThingDefs_ClimateControl\TempurMatic.xml" />
+    <Content Include="Defs\ThingDefs_Damage\Knockout.xml" />
+    <Content Include="Defs\ThingDefs_Farming\NutriPlants.xml" />
+    <Content Include="Defs\ThingDefs_Food\Foods.xml" />
+    <Content Include="Defs\ThingDefs_Furniture\Comfort.xml" />
+    <Content Include="Defs\ThingDefs_Furniture\Table.xml" />
+    <Content Include="Defs\ThingDefs_Power\GenaTron.xml" />
+    <Content Include="Defs\ThingDefs_Security\Turret.xml" />
+    <Content Include="Defs\ThingDefs_Structures\ImpregnaDoor.xml" />
+    <Content Include="Defs\ThingDefs_Structures\ImpregnaWall.xml" />
+    <Content Include="Defs\ThingDefs_Weapons\Melee.xml" />
+    <Content Include="Defs\ThingDefs_Weapons\Ranged.xml" />
+    <Content Include="Textures\Things\Building\Embrasure.png" />
+    <Content Include="Textures\UI\Metal.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(SolutionDir)About\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\About\" /E /H /K /O /X /Y
+xcopy "$(SolutionDir)Defs\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Defs\" /E /H /K /O /X /Y
+xcopy "$(SolutionDir)Textures\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Textures\" /E /H /K /O /X /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="GenaTron" ParentName="BuildingBase">
+    <defName>GenaTron</defName>
+    <label>GenaTron 5000</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rect>(0.3,0,5.4,6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <statBases>
+      <MaxHitPoints>500000</MaxHitPoints>
+      <WorkToBuild>0</WorkToBuild>
+      <MarketValue>-100</MarketValue>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>This is a ridiculously overpowered cheating reactor.</description>
+    <size>(1,1)</size>
+    <costList>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>-500000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>

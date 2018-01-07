@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="DiningChair">
+    <defName>ComfortDiningChair</defName>
+    <label>Comfort Dining Chair 5000</label>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <Comfort>2.0</Comfort>
+      <MarketValue>-100</MarketValue>
+    </statBases>
+    <description>Comfort Dining Chair 5000. The best dining chair ever conceived.</description>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="Armchair">
+    <defName>Comfort Chair 5000</defName>
+    <label>Comfort Chair 5000</label>
+    <statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>18</Mass>
+      <MarketValue>-100</MarketValue>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <Comfort>2.0</Comfort>
+    </statBases>
+    <description>Comfort Chair 5000. Clouds would kill to be this comfortable.</description>
+    <costStuffCount>1</costStuffCount>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="Bed">
+    <defName>ComfortBed</defName>
+    <label>Comfort Bed 5000</label>
+    <description>The best single bed on the market. Ridiculously comfortable.</description>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <WorkToBuild>1</WorkToBuild>
+      <MarketValue>-100</MarketValue>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>2.00</BedRestEffectiveness>
+      <Comfort>2.0</Comfort>
+      <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="RoyalBed">
+    <defName>RoyalComfortBed</defName>
+    <label>Royal Comfort Bed 5000</label>
+    <description>The best double bed on the market. King-Sized and ridiculously comfortable. Fits two.</description>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>5000</Beauty>
+      <BedRestEffectiveness>2.00</BedRestEffectiveness>
+      <Comfort>2.0</Comfort>
+      <MarketValue>-100</MarketValue>
+      <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+</Defs>

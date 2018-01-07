@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>NutriShroom</defName>
+    <label>Nutri-Shroom</label>
+    <description>A delicious, nutritious mushroom. An acceptable meat substitute.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/RawFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.1</MarketValue>
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct</foodType>
+      <nutrition>2.0</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>NutriBerries</defName>
+    <label>Nutri-Berries</label>
+    <description>A delicious, nutritious berry.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Berries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <ingestible>
+      <nutrition>2.0</nutrition>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+</Defs>

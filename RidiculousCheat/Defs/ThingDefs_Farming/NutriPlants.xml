@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>NutriHay</defName>
+    <label>Nutri-Hay</label>
+    <description>Delicious, nutritious Nutri-Hay. Your animals will thank you.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Haygrass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>1</pathCost>
+    <ingestible>
+      <nutrition>2.0</nutrition>
+    </ingestible>
+    <plant>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <growDays>.5</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <reproduces>true</reproduces>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <reproduceMtbDays>1</reproduceMtbDays>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>0.8</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>NutriShroomPlant</defName>
+    <label>Nutri-Shroom</label>
+    <description>The Nutri-Shroom! For those vegetarians who still want to dine in luxury.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>20</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Glowstool</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>1</pathCost>
+    <ingestible>
+      <nutrition>2.0</nutrition>
+    </ingestible>
+    <plant>
+      <reproduces>true</reproduces>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <growDays>.5</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestYield>20</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>NutriShroom</harvestedThingDef>
+      <maxMeshCount>4</maxMeshCount>
+      <neverBlightable>true</neverBlightable>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <visualSizeRange>
+        <min>0.4</min>
+        <max>0.7</max>
+      </visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterSizeRange>
+        <min>3</min>
+        <max>6</max>
+      </wildClusterSizeRange>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>PlantStrawberry</defName>
+    <label>strawberry plant</label>
+    <description>A fragile but tasty fruit. Delicious even when raw.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/StrawberryPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>1</pathCost>
+    <ingestible>
+      <nutrition>2.00</nutrition>
+    </ingestible>
+    <plant>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <growDays>0.5</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <reproduces>true</reproduces>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>NutriBerries</harvestedThingDef>
+      <harvestYield>20</harvestYield>
+      <sowMinSkill>0</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Things/Plant/StrawberryImmature</immatureGraphicPath>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.05</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+</Defs>

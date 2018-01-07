@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="Wall">
+    <defName>ImgregnaWallWall</defName>
+    <label>ImpregnaWall</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>The ImpregnaWall! If death finds you behind these walls, it came from within.</description>
+    <statBases>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <MarketValue>-100</MarketValue>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+    <building>
+      <isInert>true</isInert>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Heat</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Sharp</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Electric</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <ThingDef ParentName="ImpregnaWall">
+    <defName>ImpregnaWallEmbrasure</defName>
+    <label>ImpregnaWall Embrasure Edition</label>
+    <description>An opening in the metal wall allows shooting and throwing grenades from the safety of your home.</description>
+    <fillPercent>0.70</fillPercent>
+    <uiIconPath>UI/Metal</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Embrasure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>MeleeWeapon_Skullcrusher</defName>
+    <label>skullcrusher</label>
+    <description>An epicly destructive mace. Don't hit anyone you want to keep alive...</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>1</costStuffCount>
+    <statBases>
+      <WorkToMake>1</WorkToMake>
+      <Mass>1.25</Mass>
+      <Weapon_Bulk>0.5</Weapon_Bulk>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>80</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>143</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

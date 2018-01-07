@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>ImpressoMaticDiningTable</defName>
+    <label>ImpressoMatic Dining Table</label>
+    <uiIconPath>Tables/table_menuicon</uiIconPath>
+    <graphicData>
+      <texPath>Tables/tablelink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom1</li>
+      </linkFlags>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>0.0</Flammability>
+      <Beauty>10000</Beauty>
+      <MarketValue>-100</MarketValue>
+    </statBases>
+    <size>(1,1)</size>
+    <costStuffCount>1</costStuffCount>
+    <rotatable>false</rotatable>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+  </ThingDef>
+</Defs>

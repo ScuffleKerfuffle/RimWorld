@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="StunBase">
+    <defName>Knockout</defName>
+    <label>knockout</label>
+    <externalViolence>false</externalViolence>
+    <harmsHealth>false</harmsHealth>
+    <deathMessage>{0} has been killed despite this being "non-lethal". Whoops.</deathMessage>
+    <hediff>KnockedOut</hediff>
+    <hediffSolid>Bruise</hediffSolid>
+    <impactSoundType>Bullet</impactSoundType>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <combatLogRules>Damage_Stun</combatLogRules>
+  </DamageDef>
+</Defs>

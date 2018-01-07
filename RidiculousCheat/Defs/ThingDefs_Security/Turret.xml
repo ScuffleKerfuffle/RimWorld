@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>HyperTurret</defName>
+    <label>hyper turret</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretImprovised</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>100</Mass>
+      <Beauty>5000</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <description>The Hyper Turret. Has incredible accuracy and range. Don't stand in front of it, though. That would end poorly.</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>1</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>25.9</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_HyperTurret</turretGunDef>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+      <turretTopGraphicPath>Things/Building/Security/TurretImprovised_Top</turretTopGraphicPath>
+    </building>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_HyperTurret</defName>
+    <label>hyper turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <description>The gun emplacement on a hyper turret.</description>
+    <soundInteract>InteractRifle</soundInteract>
+    <canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>1.50</AccuracyTouch>
+      <AccuracyShort>1.50</AccuracyShort>
+      <AccuracyMedium>1.50</AccuracyMedium>
+      <AccuracyLong>1.50</AccuracyLong>
+      <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ShockRifle</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>60</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>ShotChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

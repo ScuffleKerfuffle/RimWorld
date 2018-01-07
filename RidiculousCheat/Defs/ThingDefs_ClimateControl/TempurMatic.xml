@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>TempurMatic</defName>
+    <label>TempurMatic</label>
+    <description>This climate control device can set to whatever temperature and will never fail.</description>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Cooler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(1,1)</size>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>true</rotatable>
+    <fillPercent>0.2</fillPercent>
+    <statBases>
+      <WorkToMake>1</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <MarketValue>-100</MarketValue>
+      <Beauty>5000</Beauty>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>-190</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0,200,255,0)</glowColor>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+  </ThingDef>
+</Defs>
