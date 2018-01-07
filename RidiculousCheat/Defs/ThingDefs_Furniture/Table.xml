@@ -5,12 +5,21 @@
     <label>ImpressoMatic Dining Table</label>
     <uiIconPath>Tables/table_menuicon</uiIconPath>
     <graphicData>
+      <!--<texPath>Things/Building/Furniture/Table2x2</texPath>-->
       <texPath>Tables/tablelink</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
         <li>Custom1</li>
       </linkFlags>
+      <!--<drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.05,0.27,1.9,1.73)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>-->
     </graphicData>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>

@@ -1,11 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="Wall">
-    <defName>ImgregnaWallWall</defName>
+  <ThingDef Name="ImpregnaWall" ParentName="BuildingBase">
+    <defName>ImpregnaWall</defName>
     <label>ImpregnaWall</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <description>The ImpregnaWall! If death finds you behind these walls, it came from within.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>150000</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
@@ -14,6 +37,29 @@
       <MarketValue>-100</MarketValue>
     </statBases>
     <costStuffCount>1</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <building>
       <isInert>true</isInert>
     </building>
@@ -23,33 +69,306 @@
         <multiplier>0</multiplier>
       </li>
       <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
         <damageDef>Blunt</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Heat</damageDef>
+        <damageDef>Poke</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Sharp</damageDef>
+        <damageDef>Stab</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Electric</damageDef>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
         <multiplier>0</multiplier>
       </li>
     </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
 
-  <ThingDef ParentName="ImpregnaWall">
+  <ThingDef Name="ImpregnaWallEmbrasure" ParentName="Wall">
     <defName>ImpregnaWallEmbrasure</defName>
-    <label>ImpregnaWall Embrasure Edition</label>
-    <description>An opening in the metal wall allows shooting and throwing grenades from the safety of your home.</description>
+    <label>ImpregnaWall Embrasure</label>
+    <description>he ImpregnaWall! If death finds you behind these walls, it came from within.</description>
+    <costStuffCount>1</costStuffCount>
+    <statBases>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <MarketValue>-100</MarketValue>
+    </statBases>
     <fillPercent>0.70</fillPercent>
     <uiIconPath>UI/Metal</uiIconPath>
     <graphicData>
       <texPath>Things/Building/Embrasure</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Poke</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
+  
+  <!--<ThingDef ParentName="BuildingBase">
+    <defName>ImpregnaWallEmbrasure</defName>
+    <label>ImpregnaWall Embrasure Edition</label>
+    <description>An opening in the metal wall allows shooting and throwing grenades from the safety of your home.</description>
+    <graphicData>
+      <texPath>Things/Embrasure</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>UI/Metal</uiIconPath>
+    <statBases>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <MarketValue>-100</MarketValue>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.70</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Poke</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>-->
 </Defs>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="DoorBase">
+  <ThingDef Name="ImpregnaDoor" ParentName="DoorBase">
     <defName>ImpregnaDoor</defName>
     <label>ImpregnaDoor</label>
     <description>A nigh-on impregnable door!</description>
@@ -10,10 +10,53 @@
       <Beauty>5000</Beauty>
       <MarketValue>-100</MarketValue>
     </statBases>
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
     <costStuffCount>1</costStuffCount>
+    <designationHotKey>Misc1</designationHotKey>
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
@@ -21,24 +64,60 @@
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Heat</damageDef>
+        <damageDef>Poke</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Sharp</damageDef>
+        <damageDef>Stab</damageDef>
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>Electric</damageDef>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
         <multiplier>0</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
 
-  <ThingDef ParentName="ImpregnaDoor">
+  <ThingDef ParentName="DoorBase">
     <defName>ImpregnaDoorAuto</defName>
     <label>auto ImpregnaDoor</label>
     <description>A night on impregnable door ... that's automatic!</description>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <Beauty>5000</Beauty>
+      <MarketValue>-100</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
     <costStuffCount>1</costStuffCount>
     <comps>
       <li Class="CompProperties_Power">
@@ -46,16 +125,83 @@
         <basePowerConsumption>1</basePowerConsumption>
       </li>
     </comps>
-    <statBases>
-      <WorkToBuild>1</WorkToBuild>
-      <MaxHitPoints>150000</MaxHitPoints>
-      <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
-    </statBases>
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
       <li>Autodoors</li>
     </researchPrerequisites>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Poke</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 </Defs>

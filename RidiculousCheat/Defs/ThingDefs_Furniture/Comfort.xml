@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="DiningChair">
+  <ThingDef ParentName="ArtableFurnitureBase">
     <defName>ComfortDiningChair</defName>
     <label>Comfort Dining Chair 5000</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/DiningChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+        <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+        <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+        <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>170</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
@@ -13,12 +28,39 @@
       <MarketValue>-100</MarketValue>
     </statBases>
     <description>Comfort Dining Chair 5000. The best dining chair ever conceived.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
     <costStuffCount>1</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
   </ThingDef>
 
-  <ThingDef ParentName="Armchair">
-    <defName>Comfort Chair 5000</defName>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ComfortChair</defName>
     <label>Comfort Chair 5000</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Armchair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.6, 0.6, 0.6)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0,0,1,0.703125)</rectN>
+        <rectS>(0.09375,0,0.84375,1)</rectS>
+        <rectE>(0,0,0.84375,0.625)</rectE>
+        <rectW>(0.15625,0,0.84375,0.625)</rectW>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>220</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
@@ -29,16 +71,42 @@
       <Comfort>2.0</Comfort>
     </statBases>
     <description>Comfort Chair 5000. Clouds would kill to be this comfortable.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
     <costStuffCount>1</costStuffCount>
+    <pathCost>30</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <designationHotKey>Misc8</designationHotKey>
+    <defaultPlacingRot>South</defaultPlacingRot>
     <building>
       <isSittable>true</isSittable>
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Bed">
+  <ThingDef ParentName="ArtableBedBase">
     <defName>ComfortBed</defName>
     <label>Comfort Bed 5000</label>
     <description>The best single bed on the market. Ridiculously comfortable.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
     <statBases>
       <MaxHitPoints>140</MaxHitPoints>
       <Flammability>0.0</Flammability>
@@ -51,13 +119,49 @@
       <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <costStuffCount>1</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>Beds</li>
+    </researchPrerequisites>
   </ThingDef>
   
-  <ThingDef ParentName="RoyalBed">
+  <ThingDef ParentName="ArtableBedBase">
     <defName>RoyalComfortBed</defName>
     <label>Royal Comfort Bed 5000</label>
     <description>The best double bed on the market. King-Sized and ridiculously comfortable. Fits two.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/RoyalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0.0</Flammability>
@@ -70,6 +174,27 @@
       <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <costStuffCount>1</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc4</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>Beds</li>
+    </researchPrerequisites>
   </ThingDef>
 </Defs>

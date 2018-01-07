@@ -66,14 +66,17 @@
     <Content Include="Defs\ThingDefs_Structures\ImpregnaWall.xml" />
     <Content Include="Defs\ThingDefs_Weapons\Melee.xml" />
     <Content Include="Defs\ThingDefs_Weapons\Ranged.xml" />
+    <Content Include="Textures\Tables\tablelink.png" />
+    <Content Include="Textures\Tables\table_menuicon.png" />
+    <Content Include="Textures\Tables\testatlas.png" />
     <Content Include="Textures\Things\Building\Embrasure.png" />
     <Content Include="Textures\UI\Metal.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)About\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\About\" /E /H /K /O /X /Y
-xcopy "$(SolutionDir)Defs\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Defs\" /E /H /K /O /X /Y
-xcopy "$(SolutionDir)Textures\*.*" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Textures\" /E /H /K /O /X /Y</PostBuildEvent>
+    <PostBuildEvent>echo D|xcopy "$(SolutionDir)About" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\About" /E /H /K /O /X /Y
+echo D|xcopy "$(SolutionDir)Defs" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Defs" /E /H /K /O /X /Y
+echo D|xcopy "$(SolutionDir)Textures" "E:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RidiculousCheat\Textures" /E /H /K /O /X /Y</PostBuildEvent>
   </PropertyGroup>
 </Project>
