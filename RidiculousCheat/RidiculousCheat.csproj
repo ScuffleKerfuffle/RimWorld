@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\ShockBulletProjectileDef.cs" />
+    <Compile Include="Source\ShockBulletThingDef.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
@@ -61,11 +63,17 @@
     <Content Include="Defs\ThingDefs_Furniture\Comfort.xml" />
     <Content Include="Defs\ThingDefs_Furniture\Table.xml" />
     <Content Include="Defs\ThingDefs_Power\GenaTron.xml" />
-    <Content Include="Defs\ThingDefs_Security\Turret.xml" />
-    <Content Include="Defs\ThingDefs_Structures\ImpregnaDoor.xml" />
+    <Content Include="Defs\ThingDefs_Security\Turrets.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Defs\ThingDefs_Structures\ImpregnaDoor.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Defs\ThingDefs_Structures\ImpregnaWall.xml" />
     <Content Include="Defs\ThingDefs_Weapons\Melee.xml" />
-    <Content Include="Defs\ThingDefs_Weapons\Ranged.xml" />
+    <Content Include="Defs\ThingDefs_Weapons\Ranged.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Textures\Tables\tablelink.png" />
     <Content Include="Textures\Tables\table_menuicon.png" />
     <Content Include="Textures\Tables\testatlas.png" />

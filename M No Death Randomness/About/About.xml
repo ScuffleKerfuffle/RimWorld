@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>No Death Randomness</name>
+	<author>Mazacik</author>
+	<url>https://ludeon.com/forums/index.php?topic=27580.0</url>
+	<targetVersion>0.18.0</targetVersion>
+	<description>
+    Okay now it's getting complicated.
+
+    This is an unofficial remake of http://steamcommunity.com/sharedfiles/filedetails/?id=940455142, which in itself is described below.  I will try to keep this thing up-to-date as time progresses.
+
+    Unoffical upload of Mazacik's Mod "[A17] No Death Randomness"
+    https://ludeon.com/forums/index.php?topic=27580.0
+
+    Removes the 67% chance for all non-colonist, non-prisoner pawns to die when they should only be getting downed instead. This is most noticeable during raids, as raiders often spontaneously die after getting shot in their arm once. Duh. However, this obviously creates a game balance issue, as you will be able to capture every single raider that doesn't have a vital organ destroyed.
+
+    Works very will with any non-lethal weapon mod, as they no longer randomly turn into insta-kill weapons.
+
+    There should be no compatibility issues with other mods. Load order doesn't matter. Works with existing saves. Don't use with the "Less Death Randomless" mod
+
+    -I found a bug / would like to request a feature.
+    Write a comment about it and I'll see what can I do.
+    https://ludeon.com/forums/index.php?topic=27580.0
+
+    License: Do whatever you want with this.</description>
+</ModMetaData>

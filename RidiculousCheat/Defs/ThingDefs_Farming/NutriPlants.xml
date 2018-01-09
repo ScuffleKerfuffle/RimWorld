@@ -80,9 +80,9 @@
   </ThingDef>
 
   <ThingDef ParentName="PlantBase">
-    <defName>PlantStrawberry</defName>
-    <label>strawberry plant</label>
-    <description>A fragile but tasty fruit. Delicious even when raw.</description>
+    <defName>NutriBerry</defName>
+    <label>Nutri-Berry plant</label>
+    <description>The Nutri-Berry! Superfoods wish they could be like this.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
     </statBases>

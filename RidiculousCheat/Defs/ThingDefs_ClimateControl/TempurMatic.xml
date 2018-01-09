@@ -27,7 +27,7 @@
       <WorkToMake>1</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.0</Flammability>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
       <Beauty>5000</Beauty>
     </statBases>
     <tickerType>Rare</tickerType>
@@ -40,6 +40,12 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>-1</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_TempControl">
         <energyPerSecond>-190</energyPerSecond>
       </li>

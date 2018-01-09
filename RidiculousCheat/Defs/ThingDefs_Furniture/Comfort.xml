@@ -25,7 +25,7 @@
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
       <Comfort>2.0</Comfort>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <description>Comfort Dining Chair 5000. The best dining chair ever conceived.</description>
     <socialPropernessMatters>true</socialPropernessMatters>
@@ -65,7 +65,7 @@
       <MaxHitPoints>220</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Mass>18</Mass>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
       <Comfort>2.0</Comfort>
@@ -112,7 +112,7 @@
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
       <WorkToBuild>1</WorkToBuild>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
       <Mass>50</Mass>
       <BedRestEffectiveness>2.00</BedRestEffectiveness>
       <Comfort>2.0</Comfort>
@@ -170,7 +170,7 @@
       <Beauty>5000</Beauty>
       <BedRestEffectiveness>2.00</BedRestEffectiveness>
       <Comfort>2.0</Comfort>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
       <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>

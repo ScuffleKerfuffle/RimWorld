@@ -34,7 +34,7 @@
       <WorkToBuild>1</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <costStuffCount>1</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -150,7 +150,7 @@
       <WorkToBuild>1</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <fillPercent>0.70</fillPercent>
     <uiIconPath>UI/Metal</uiIconPath>
@@ -266,7 +266,7 @@
       <WorkToBuild>1</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <costStuffCount>1</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>

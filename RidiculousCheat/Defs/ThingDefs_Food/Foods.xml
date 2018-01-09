@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="PlantFoodRawBase">
+  <ThingDef ParentName="OrganicProductBase">
     <defName>NutriShroom</defName>
     <label>Nutri-Shroom</label>
     <description>A delicious, nutritious mushroom. An acceptable meat substitute.</description>
@@ -17,6 +17,9 @@
       <foodType>AnimalProduct</foodType>
       <nutrition>2.0</nutrition>
     </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
   </ThingDef>
 
   <ThingDef ParentName="PlantFoodRawBase">

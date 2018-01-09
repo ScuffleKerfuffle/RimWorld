@@ -20,7 +20,7 @@
     <statBases>
       <MaxHitPoints>500000</MaxHitPoints>
       <WorkToBuild>0</WorkToBuild>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
       <Flammability>0.0</Flammability>
       <Beauty>5000</Beauty>
     </statBases>

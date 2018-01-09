@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- ========= Shock Rifle ========== -->
-  <ThingDef ParentName="BaseBullet">
+  <ThingDef Class="RidiculousCheat.ShockBulletThingDef" ParentName="BaseBullet">
     <defName>Bullet_ShockRifle</defName>
     <label>shock shot</label>
     <graphicData>
@@ -9,10 +9,12 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Knockout</damageDef>
-      <damageAmountBase>1</damageAmountBase>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>0</damageAmountBase>
       <speed>100</speed>
     </projectile>
+    <thingClass>RidiculousCheat.ShockBulletProjectileDef</thingClass>
+    <HediffToAdd>KnockedOut</HediffToAdd>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">

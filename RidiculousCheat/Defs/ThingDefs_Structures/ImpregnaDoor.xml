@@ -8,7 +8,7 @@
       <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>150000</MaxHitPoints>
       <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <graphicData>
       <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
@@ -106,7 +106,7 @@
       <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>150000</MaxHitPoints>
       <Beauty>5000</Beauty>
-      <MarketValue>-100</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <graphicData>
       <texPath>Things/Building/Door/Autodoor_Mover</texPath>
