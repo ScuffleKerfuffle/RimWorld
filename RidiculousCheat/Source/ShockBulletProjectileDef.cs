@@ -21,6 +21,7 @@ namespace RidiculousCheat
                 if (knockoutOnPawn != null) return; //It's been knocked out once. No need to do it again.
 
                 var hediff = HediffMaker.MakeHediff(Def.HediffToAdd, hitPawn);
+                
                 hitPawn.health.AddHediff(hediff);
 
                 Messages.Message($"{hitPawn.Label} was knocked out!", MessageTypeDefOf.NeutralEvent);
