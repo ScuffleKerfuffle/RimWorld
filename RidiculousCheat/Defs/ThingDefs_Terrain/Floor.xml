@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TerrainDef Name="SteriFloorJade">
+    <defName>SteriFloorJade</defName>
+    <label>Steri-Floor (jade)</label>
+    <description>Steri-Floor. Sterility and beauty wrapped in a single gorgeous package. Now available in gold, jade, marble, plasteel, and classic "sterile tile" varieties!</description>
+    <texturePath>Terrain/JadeFloor</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>1.0</Cleanliness>
+    </statBases>
+    <costList>
+      <Jade>1</Jade>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructMetal</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Name="SteriFloorPlasteel">
+    <defName>SteriFloorPlasteel</defName>
+    <label>Steri-Floor (plasteel)</label>
+    <description>Steri-Floor. Sterility and beauty wrapped in a single gorgeous package. Now available in gold, jade, marble, plasteel, and classic "sterile tile" varieties!</description>
+    <texturePath>Terrain/PlasteelFloor</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>1.0</Cleanliness>
+    </statBases>
+    <costList>
+      <Plasteel>1</Plasteel>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructMetal</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Name="SteriFloorMarble">
+    <defName>SteriFloorMarble</defName>
+    <label>Steri-Floor (marble)</label>
+    <description>Steri-Floor. Sterility and beauty wrapped in a single gorgeous package. Now available in gold, jade, marble, plasteel, and classic "sterile tile" varieties!</description>
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
+    <color>(132,135,132)</color>
+    <edgeType>FadeRough</edgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>1.0</Cleanliness>
+    </statBases>
+    <costList>
+      <BlocksMarble>1</BlocksMarble>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructMetal</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Name="SteriFloorGold">
+    <defName>SteriFloorGold</defName>
+    <label>Steri-Floor (gold)</label>
+    <description>Steri-Floor. Sterility and beauty wrapped in a single gorgeous package. Now available in gold, jade, marble, plasteel, and classic "sterile tile" varieties!</description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.65, 0.65, 0.35)</color>
+    <edgeType>FadeRough</edgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>1.0</Cleanliness>
+    </statBases>
+    <costList>
+      <Gold>1</Gold>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructMetal</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Name="SteriFloor">
+    <defName>SteriFloor</defName>
+    <label>Steri-Floor (classic)</label>
+    <description>Steri-Floor. Sterility and beauty wrapped in a single gorgeous package. Now available in gold, jade, marble, plasteel, and classic "sterile tile" varieties!</description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.71, 0.71, 0.71)</color>
+    <edgeType>FadeRough</edgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>1.0</Cleanliness>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructMetal</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+</Defs>

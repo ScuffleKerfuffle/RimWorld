@@ -47,7 +47,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_ShockRifle</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>60</range>
+        <range>40</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>ShotChargeRifle</soundCast>
@@ -121,7 +121,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PhaseRifle</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>60</range>
+        <range>40</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>ShotChargeRifle</soundCast>

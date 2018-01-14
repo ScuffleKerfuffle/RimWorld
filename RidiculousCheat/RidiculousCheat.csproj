@@ -70,6 +70,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Defs\ThingDefs_Structures\ImpregnaWall.xml" />
+    <Content Include="Defs\ThingDefs_Terrain\Floor.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Defs\ThingDefs_Weapons\Melee.xml" />
     <Content Include="Defs\ThingDefs_Weapons\Ranged.xml">
       <SubType>Designer</SubType>
@@ -77,6 +80,8 @@
     <Content Include="Textures\Tables\tablelink.png" />
     <Content Include="Textures\Tables\table_menuicon.png" />
     <Content Include="Textures\Tables\testatlas.png" />
+    <Content Include="Textures\Terrain\JadeFloor.jpg" />
+    <Content Include="Textures\Terrain\PlasteelFloor.jpg" />
     <Content Include="Textures\Things\Building\Embrasure.png" />
     <Content Include="Textures\UI\Metal.png" />
   </ItemGroup>

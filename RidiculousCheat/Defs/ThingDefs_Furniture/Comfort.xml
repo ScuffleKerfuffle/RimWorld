@@ -197,4 +197,62 @@
       <li>Beds</li>
     </researchPrerequisites>
   </ThingDef>
+
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>ComfortBedMedical</defName>
+    <label>Medical Bed 5000</label>
+    <description>The best medical bed on the market. Ridiculously comfortable and yet packed with gadgets to improve medical performance.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Beauty>5000</Beauty>
+      <WorkToBuild>1</WorkToBuild>
+      <MarketValue>10</MarketValue>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>2.00</BedRestEffectiveness>
+      <Comfort>2.0</Comfort>
+      <ImmunityGainSpeedFactor>2.0</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>2.0</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>2.0</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>9</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+  </ThingDef>
 </Defs>

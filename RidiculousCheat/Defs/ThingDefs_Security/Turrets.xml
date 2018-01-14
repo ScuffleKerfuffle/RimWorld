@@ -47,7 +47,7 @@
     <costStuffCount>1</costStuffCount>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>60</specialDisplayRadius>
+    <specialDisplayRadius>40</specialDisplayRadius>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_HyperTurret</turretGunDef>
@@ -91,7 +91,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_ShockRifle</defaultProjectile>
         <warmupTime>1.5</warmupTime>
-        <range>60</range>
+        <range>40</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>ShotChargeRifle</soundCast>
@@ -191,7 +191,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PhaseRifle</defaultProjectile>
         <warmupTime>1.5</warmupTime>
-        <range>60</range>
+        <range>40</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>ShotChargeRifle</soundCast>
