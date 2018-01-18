@@ -16,6 +16,12 @@
       <Weapon_Bulk>0.5</Weapon_Bulk>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponTags>
+      <li>Sugoi</li>
+    </weaponTags>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>

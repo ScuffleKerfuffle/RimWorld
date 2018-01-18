@@ -140,11 +140,35 @@
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
 
-  <ThingDef Name="ImpregnaWallEmbrasure" ParentName="Wall">
+  <ThingDef Name="ImpregnaWallEmbrasure" ParentName="BuildingBase">
     <defName>ImpregnaWallEmbrasure</defName>
     <label>ImpregnaWall Embrasure</label>
-    <description>he ImpregnaWall! If death finds you behind these walls, it came from within.</description>
-    <costStuffCount>1</costStuffCount>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>The ImpregnaWall! If death finds you behind these walls, it came from within.</description>
+    <graphicData>
+      <texPath>Things/Building/Embrasure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>UI/Metal</uiIconPath>
     <statBases>
       <MaxHitPoints>150000</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
@@ -152,12 +176,33 @@
       <Beauty>5000</Beauty>
       <MarketValue>10</MarketValue>
     </statBases>
+    <costStuffCount>1</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.70</fillPercent>
-    <uiIconPath>UI/Metal</uiIconPath>
-    <graphicData>
-      <texPath>Things/Building/Embrasure</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+    </building>
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
@@ -232,6 +277,7 @@
         <multiplier>0</multiplier>
       </li>
     </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
   
   <!--<ThingDef ParentName="BuildingBase">

@@ -75,11 +75,11 @@
     <destroyOnDrop>true</destroyOnDrop>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>1</AccuracyMedium>
-      <AccuracyLong>1</AccuracyLong>
-      <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     <weaponTags>
@@ -147,7 +147,7 @@
     <costStuffCount>1</costStuffCount>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>25.9</specialDisplayRadius>
+    <specialDisplayRadius>40</specialDisplayRadius>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_HyperPhaseTurret</turretGunDef>
@@ -175,11 +175,11 @@
     <destroyOnDrop>true</destroyOnDrop>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>1.50</AccuracyTouch>
-      <AccuracyShort>1.50</AccuracyShort>
-      <AccuracyMedium>1.50</AccuracyMedium>
-      <AccuracyLong>1.50</AccuracyLong>
-      <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     <weaponTags>

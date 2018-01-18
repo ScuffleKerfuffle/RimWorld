@@ -9,7 +9,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>EMP</damageDef>
+      <damageDef>Bullet</damageDef>
       <damageAmountBase>0</damageAmountBase>
       <speed>100</speed>
     </projectile>
@@ -39,6 +39,12 @@
     <costList>
       <Steel>1</Steel>
     </costList>
+    <weaponTags>
+      <li>Sugoi</li>
+    </weaponTags>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
     <generateCommonality>0.30</generateCommonality>
     <techLevel>Spacer</techLevel>
     <verbs>
@@ -110,6 +116,12 @@
       <RangedWeapon_Cooldown>.5</RangedWeapon_Cooldown>
       <Weapon_Bulk>0.1</Weapon_Bulk>
     </statBases>
+    <weaponTags>
+      <li>Sugoi</li>
+    </weaponTags>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
     <costList>
       <Steel>1</Steel>
     </costList>

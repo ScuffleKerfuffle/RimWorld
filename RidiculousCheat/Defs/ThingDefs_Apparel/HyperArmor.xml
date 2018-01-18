@@ -15,7 +15,7 @@
     <statBases>
       <WorkToMake>1</WorkToMake>
       <MaxHitPoints>3400</MaxHitPoints>
-      <MarketValue>0.05</MarketValue>
+      <MarketValue>500000.00</MarketValue>
       <Mass>1</Mass>
       <Beauty>50</Beauty>
       <ArmorRating_Blunt>1.20</ArmorRating_Blunt>
@@ -49,6 +49,9 @@
         <li>Middle</li>
         <li>Shell</li>
       </layers>
+      <tags>
+        <li>Sugoi</li>
+      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
@@ -90,7 +93,7 @@
     <statBases>
       <WorkToMake>1</WorkToMake>
       <MaxHitPoints>3400</MaxHitPoints>
-      <MarketValue>0.05</MarketValue>
+      <MarketValue>500000.00</MarketValue>
       <Beauty>50</Beauty>
       <Mass>1</Mass>
       <ArmorRating_Blunt>1.20</ArmorRating_Blunt>
@@ -119,6 +122,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
+      <tags>
+        <li>Sugoi</li>
+      </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

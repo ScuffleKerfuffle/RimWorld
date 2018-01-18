@@ -13,17 +13,20 @@
       <MaxHitPoints>60</MaxHitPoints>
     </statBases>
     <ingestible>
-      <preferability>RawTasty</preferability>
-      <foodType>AnimalProduct</foodType>
       <nutrition>2.0</nutrition>
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <foodType>AnimalProduct</foodType>
     </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <thingCategories>
       <li>AnimalProductRaw</li>
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="PlantFoodRawBase">
-    <defName>NutriBerries</defName>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>NutriBeries</defName>
     <label>Nutri-Berries</label>
     <description>A delicious, nutritious berry.</description>
     <graphicData>
@@ -36,8 +39,13 @@
     <ingestible>
       <nutrition>2.0</nutrition>
       <preferability>RawTasty</preferability>
-      <tasteThought></tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
   </ThingDef>
 </Defs>

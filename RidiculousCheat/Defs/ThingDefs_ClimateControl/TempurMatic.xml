@@ -3,8 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>TempurMatic</defName>
     <label>TempurMatic</label>
-    <description>This climate control device can set to whatever temperature and will never fail.</description>
-    <thingClass>Building_Heater</thingClass>
+    <thingClass>RidiculousCheat.TempurMaticThingDef</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/TempControl/Cooler</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -15,22 +14,23 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <size>(1,1)</size>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <pathCost>150</pathCost>
+    <pathCost>40</pathCost>
     <blockWind>true</blockWind>
-    <rotatable>true</rotatable>
+    <rotatable>false</rotatable>
     <fillPercent>0.2</fillPercent>
     <statBases>
-      <WorkToMake>1</WorkToMake>
+      <WorkToBuild>1</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.0</Flammability>
       <MarketValue>10</MarketValue>
+      <Mass>6</Mass>
       <Beauty>5000</Beauty>
     </statBases>
     <tickerType>Rare</tickerType>
+    <description>This climate control device can set to whatever temperature and will never fail.</description>
     <costList>
       <Steel>1</Steel>
     </costList>
@@ -43,17 +43,19 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>-1</basePowerConsumption>
+        <basePowerConsumption>1</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_TempControl">
         <energyPerSecond>-190</energyPerSecond>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
+        <glowRadius>5</glowRadius>
         <glowColor>(0,200,255,0)</glowColor>
       </li>
     </comps>
     <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <size>(1,1)</size>
   </ThingDef>
 </Defs>

@@ -80,7 +80,7 @@
   </ThingDef>
 
   <ThingDef ParentName="PlantBase">
-    <defName>NutriBerry</defName>
+    <defName>NutriBerryPlant</defName>
     <label>Nutri-Berry plant</label>
     <description>The Nutri-Berry! Superfoods wish they could be like this.</description>
     <statBases>
@@ -101,7 +101,7 @@
       <dieIfLeafless>false</dieIfLeafless>
       <reproduces>true</reproduces>
       <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>NutriBerries</harvestedThingDef>
+      <harvestedThingDef>NutriBeries</harvestedThingDef>
       <harvestYield>20</harvestYield>
       <sowMinSkill>0</sowMinSkill>
       <sowTags>
