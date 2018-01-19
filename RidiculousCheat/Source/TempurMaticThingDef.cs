@@ -29,18 +29,25 @@ namespace RidiculousCheat
             var tempDifference = AmbientTemperature - targetTemp;
 
             if (Math.Abs(tempDifference) < 1.0f)
+            {
                 return;
+            }
             
             var energyPerSecond = CompTempControl.Props.energyPerSecond;
 
-            var a = GenTemperature.ControlTemperatureTempChange(Position, Map, GetEnergyLimit(energyPerSecond), targetTemp);
+            if (tempDifference < 0) // In this scenario, the ambient temperature is lower than the target temperature.
+            {
+                energyPerSecond = Math.Abs(energyPerSecond);
+            }
 
-            var atHighPower = !Mathf.Approximately(a, 0.0f);
+            var tempChange = GenTemperature.ControlTemperatureTempChange(Position, Map, GetEnergyLimit(energyPerSecond), targetTemp);
+            
+            var atHighPower = !Mathf.Approximately(tempChange, 0.0f);
             var powerTraderProps = CompPowerTrader.Props;
 
             if (atHighPower)
             {
-                this.GetRoomGroup().Temperature += a;
+                this.GetRoomGroup().Temperature += tempChange;
                 CompPowerTrader.PowerOutput = -powerTraderProps.basePowerConsumption;
             }
             else
